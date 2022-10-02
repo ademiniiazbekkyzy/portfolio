@@ -110,9 +110,6 @@ nav ul li a:hover:after{
         background-position: 2000px 0;
 
     }
-
-
-
 }
 
 .text-box h3{
@@ -155,9 +152,18 @@ nav ul li a:hover:after{
     display: block;
     margin: 25px 5px;
 }
+.intro{
+    color: rgb(0, 0, 0);
+    bottom: 70%;
+}
 
-/* .intro{
+
+.intro h3{
     font-size: 20px;
-    font-weight: 100;
-    font-style: italic;
-} */
+}
+
+.hobbies{
+    color: rgba(28, 16, 4, 0.885);
+    padding: 40px 0px;
+}
+
