@@ -8,8 +8,17 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --bc-color: #fff;
+    --text-color:#000;
+    --secound-color:#a09dab;
+    --main-color:#f75023;
+    --big-font:5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
 body{
-    background: #fff;
+    background: var(--bc-color);
     color: #000;
 }
 
@@ -37,39 +46,32 @@ hr{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 10rem;
-    padding-left: 320px;
+
 }
 
 .home-text h1{
-    font-size: 160px;
-    font-family:Arial, Helvetica, sans-serif;
+    margin: 10px 0 25px;
+    font-size: 7rem;
     line-height: 1;
-    margin: 10px 0px 25px;
-    color: transparent;
-    -webkit-text-stroke: 1px rgb(53, 38, 1) ;
-    background: url(../img/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-}
-
-@keyframes back{
-    100%{
-        background-position: 2000px 0;
-
-    }
+    font-weight: 500;
+    color: #000;
 }
 
 .home-text h3{
     margin-top: 20px;
     font-size: 23px;
+    /* color: rgb(61, 37, 125) */
 }
 
 .home-text p{
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     color: #a09dab;
     line-height: 28px;
     margin-bottom: 20px;
+}
+.home-img{
+    width: 240px;
+    height: auto;
 }
 
 span{
@@ -147,7 +149,7 @@ span{
     border-radius: 30px;
     color: #000;
     letter-spacing: 1px;
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     transition: ease .50s;
 }
 
@@ -155,7 +157,7 @@ span{
     transform: scale(1.1);
     background: rgb(50, 27, 120);
     border: 2px solid rgb(50, 27, 120);
-    color: #fff;
+    color: var(--bc-color);
 }
 
 /* ABOUT SECTION */
@@ -174,7 +176,7 @@ span{
 }
 
 .about-text h2{
-    font-size: 3rem;
+    font-size: var(--h2-font);
     font-weight: 500;
     margin: 8px 0px 25px;
     line-height: 1.1;
@@ -188,7 +190,7 @@ span{
 
 .about-text p{
     max-width: 550px;
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     color: #a09dab;
     line-height: 28px;
     margin-bottom: 45px;
@@ -203,7 +205,6 @@ span{
     text-align: center;
     margin-top: 80px ;
     margin-bottom: 80px;
-    /* height: 100px; */
 }
 
 .sub-box{
@@ -226,7 +227,7 @@ span{
 }
 
 .sub-box p{
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     color: #a09dab;
     line-height: 28px;
 }
@@ -251,23 +252,20 @@ span{
     font-weight: 500;
     margin: 8px 0px 25px;
     line-height: 1.1;
-    /* text-align: center; */
 }
 
 .cooking-text h3{
     color: rgb(50, 27, 120);
     font-size: 20px;
     font-weight: 500;
-    /* text-align: center; */
 }
 
 .cooking-text p{
     max-width: 550px;
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     color: #a09dab;
     line-height: 28px;
     margin-bottom: 45px;
-    /* text-align: center; */
 }
 
 /* SECOND HOBBY */
@@ -286,7 +284,7 @@ span{
 }
 
 .photographing-text h2{
-    font-size: 3rem;
+    font-size: var(--h2-font);
     font-weight: 500;
     margin: 8px 0px 25px;
     line-height: 1.1;
@@ -301,7 +299,7 @@ span{
 
 .photographing-text p{
     max-width: 550px;
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     color: #a09dab;
     line-height: 28px;
     margin-bottom: 45px;
@@ -309,13 +307,13 @@ span{
 
 /* EMBEDDED VIDEO FROM YOUTUBE */
 
-.works{
+.video{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
   }
-.works iframe{
+.video iframe{
     position: absolute;
     top:0;
     left: 0;
@@ -323,7 +321,7 @@ span{
     height: 100%;
   }
 
-.works0 h3{
+.work-text h3{
     color: rgba(28, 16, 4, 0.885);
     margin: 8px 10px 40px;
     line-height: 1.1;
@@ -336,7 +334,7 @@ span{
 
 .facts h3{
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--h2-font);
     color: rgb(56, 35, 114)
     /* padding: 10px; */
 }
@@ -366,7 +364,7 @@ span{
     transform: scale(1.1);
     background: rgb(109, 88, 173);
     border: 2px solid rgb(50, 27, 120);
-    color: #fff;
+    color: var(--bc-color);
 }
 
 .randomFacts{
@@ -392,7 +390,7 @@ span{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 3px;
-    color: #fff;
+    color: var(--bc-color);
 }
 
 .contacts img{
@@ -406,7 +404,7 @@ span{
 
 .contacts .icons{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     grid-gap: 4rem;
 }
 
@@ -414,7 +412,7 @@ span{
     max-width: 100%;
     width: 470px;
     padding: 12px 15px;
-    background: #fff;
+    background: var(--bc-color);
     color: #000;
     border: none; 
     outline: none;
@@ -425,7 +423,7 @@ span{
 .contacts .action form input[type="submit"]{
     padding: 12px 40px;
     background: rgb(50, 27, 120);
-    color: #fff;
+    color: var(--bc-color);
     border: none;
     outline: none;
     margin: 0 10px 20px 0;
@@ -441,6 +439,137 @@ span{
 }
 
 .end p{
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     letter-spacing: 1px;
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1425px){
+    header{
+        padding: 16px 3%;
+        transition: .3s;
+    }
+    section{
+        padding: 70px 3%;
+        transition: .3s;
+    }
+    .contacts{
+        width: 95%;
+        transition: .3s;
+    }
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.3rem;
+        --p-font: 1rem;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 972px){
+    .header-container {
+        padding: 10px 15px;
+}
+}
+@media (max-width: 1280px){
+.container {
+    max-width: 990px;
+}
+}
+
+@media (max-width: 800px){
+    .home{
+        grid-template-columns: 1fr;
+        min-height: 130vh;
+        grid-gap: 1rem;
+    }
+    .home-text{
+        padding-left: 55px;
+    }
+    .home-img img{
+        display: block;
+        margin: 0 auto;
+        padding-left: 60px;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        padding: 100px;
+        /* grid-gap: 1rem; */
+    }
+
+    .about-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .about p{
+        text-align: center;
+    }
+
+    .cooking{
+        grid-template-columns: 1fr;
+        padding: 100px;
+        grid-gap: 1rem;
+    }
+
+    .cooking-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cooking h3{
+        text-align: center;
+    }
+    .cooking h2{
+        text-align: center;
+    }
+    .cooking p{
+        text-align: center;
+    }
+
+    .photographing{
+        grid-template-columns: 1fr;
+        padding: 100px;
+    }
+
+    .photographing-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .photographing h3{
+        text-align: center;
+    }
+    .photographing h2{
+        text-align: center;
+    }
+    .photographing p{
+        text-align: center;
+    }
+    .work{
+        padding: 100px;
+    }
+    .random-facts{
+        padding: 100px;
+    }
+
+    :root{
+        --big-font: 3.4rem;
+        --h2-font: 2rem;
+    }
+    section{
+        padding: 65% 3%;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 540px){
+    .contacts .action form input[type="email"]{
+        width: 310px;
+    }
 }
