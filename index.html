@@ -5,78 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <img src="./img/A3504B00-DC98-45C1-A1A3-FD03F06B5401.png" class="logo" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Hobbies</a></li>
+    <header id="header" class="header">
+        <div class="header-container container">
+            <a href="index.html" class="header-logo"><img src="./img/A3504B00-DC98-45C1-A1A3-FD03F06B5401.png" alt=""></a>
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="#home" class="header-menu__item-link">home</a></li>
+                <li class="header-menu__item"><a href="#about" class="header-menu__item-link">about</a></li>
+                <li class="header-menu__item"><a href="#hobbies" class="header-menu__item-link">hobbies</a></li>
+                <li class="header-menu__item"><a href="#contacts" class="header-menu__item-link">contact</a></li>
             </ul>
-            <a href="#" class="btn">Buy now</a>
+            <a href="#" class="top-btn">Download CV</a>
+        </div>
+    </header>
 
-        </nav>
-
-        <div class="text-box">
-            <p>I'M</p>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, I'm </h3>
             <h1>ADEMI</h1>
-            <h3>a student of Ala-Too International University</h3>
-            <div class="row">
-                <a href="#">Contact me <span>&#x27F6;</span></a>
-                <span>You can explore more about My Portfolio</span>
-
-            </div>
+            <h3>a student of <span>Ala-Too International University</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque ipsam dolore placeat nisi iste obcaecati sed velit nostrum in.</p>
         </div>
-        <div class="social-icons">
-            <a href="#"><img src="./img/instagram-3.png" alt=""></a>
+        <div class="home-img">
+            <img src="img/IMAGE 2022-09-20 18:56:01.jpg" alt="" width="280px">
+        </div>
+    </section>
+    <hr>
+
+
+    <!-- About -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/IMAGE 2022-09-20 20:53:35.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h3>I'm a student of Ala-Too University</h3>
+            <h2>A little about me</h2>
+            <p>I study at Ala-Too University at the Faculty of Engineering and Computer Science. I was able to enroll here thanks to the result of ORT (211 points), which gave me the opportunity to study at a discount. And now I 'm a second-year student.  After graduating from the university, 
+                I'm going to continue my master's degree abroad in the specialty "Business management" while simultaneously doing programming.</p>
+        </div>
+    </section>
+    <hr>
+
+        <!-- hobbies -->
+
+        <section class="hobbies" id="hobbies">
+            <div class="items">
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="img/DDEBA879-33DD-4859-B292-F496E1AE902A.png" alt="">
+                    </div>
+                    <h3>Cooking</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aut eos corporis labore, amet distinctio.</p>
+                </div>
+    
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="img/EC5C73F5-527A-4456-B8DF-BFB318161941.png" alt="">
+                    </div>
+                    <h3>Photographing</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aut eos corporis labore, amet distinctio.</p>
+                </div>
+    
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="img/548B70C8-CD01-4111-A820-0AB2CC9FC1C1.png" alt="">
+                    </div>
+                    <h3>Stretching</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aut eos corporis labore, amet distinctio.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+
+        <section class="cooking" id="cooking">
+            <div class="cooking-text">
+                <h3>I'm a student of Ala-Too University</h3>
+                <h2>I can design everything you want</h2>
+                <p>I study at Ala-Too University at the Faculty of Engineering and Computer Science. I was able to enroll here thanks to the result of ORT (211 points), which gave me the opportunity to study at a discount. And now I 'm a second-year student.
+                    Since I am a visual person, I decided that I want to continue my studies and work as a web designer.</p>
+            </div>
+            <div class="cooking-img">
+                <img src="img/IMAGE 2022-09-20 20:53:35.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="photographing" id="Photographing">
+
+            <div class="photographing-img">
+                <img src="img/IMAGE 2022-09-20 22:21:06.jpg" alt="">
+            </div>
+            <div class="photographing-text">
+                <h3>Lorem ipsum, dolor sit amet consectetur elit.</h3>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis autem officia enim repudiandae suscipit,
+                     modi iste dicta quod blanditiis ab accusamus nobis. Sapiente doloribus numquam cupiditate mollitia cumque reiciendis.</p>
+            </div>
+        </section>
+        <hr>
+
+    <!-- Contacts -->
+    <section>
+        <div class="works0">
+        <h3>In the winter of 2022, I studied at "Makers" for the python course.I would like to share my first project written with Django framework.</h3>
+        </div>
+        <div class="works">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J0XN__doeb8" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <div class="facts">
+            <h3>Random facts!</h3>
+            <h4>do you want to know some facts about programming?</h4>
+        </div>
+        <div id="button">
+            <button onclick="oddTrivia()" class="button">Click here!</button>
+        </div>
+        <div class="randomFacts">
+            <p id="ptrivia"></p>
+        </div>
+    </section>
+    <hr>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="center">
+            <h3>Let's talk about everything</h3>
+            <div class="icons">
+            <a href="https://www.instagram.com/"><img src="./img/instagram-3.png" alt="" ></a>
             <a href="https://github.com/ademiniiazbekkyzy"><img src="./img/GitHub-Mark-120px-plus.png" alt=""></a>
+            <a href="https://t.me/demkani8"><img src="./img/telegram (1).png"></a>
+        </div>
         </div>
 
-        <div class="intro">
-            <h3>A little about me</h3>
-            <p>I study at Ala-Too University at the Faculty of Engineering and Computer Science. I was able to enroll here thanks to the result of ORT (211 points), which gave me the opportunity to study at a discount. And now I 'm a second-year student.
-                Since I am a visual person, I decided that I want to continue my studies and work as a web designer.</p>
-        </div>
-
-
-        <div id="button_div">
-            <div>
-              <button id="button">
-                <img src="./img/free-icon-uranus-8756021.png" alt=""id="button_img"/>
-                <div id="score">0</div>
+            <div class="action">
+                <form>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
             </div>
-              <h3 id="button_list" style="color: rgb(63, 98, 142);"></h3>
-              <h2 id="h2">CLICK ON THE ICON</h2>
-
-            </button>
         </div>
+    </section>
 
-        <!-- <img src="./img/IMAGE 2022-09-20 21:02:10.jpg" alt="Ala-Too" width="300px">
-        <img src="./img/IMAGE 2022-09-20 21:00:47.jpg" alt="test" width="300px"> -->
-        
-        <!-- <div class="hobbies">   
-            <h3>My hobbies and interests</h3>
-            <ul>
-                <li>cooking</li>
-                <li>stretching</li> 
-                <li>shooting</li>
-                <li>blogging</li>
-        </div>  -->
-        <!-- <img src="./img/IMAGE 2022-09-20 18:56:01.jpg" alt=""> -->
+    <!-- end -->
 
-            <!-- <img src="./img/IMAGE 2022-09-20 22:21:06.jpg" alt="photo" width="300px">
-            <img src="./img/IMAGE 2022-09-20 20:53:35.jpg" alt="photo" width="300px"> -->
-
-
-        <!-- <h5>In the winter of 2022, I studied at "Makers" for the python course.I also took online courses stepik python.</h5> -->
-            <!-- <img src="./img/IMAGE 2022-09-20 22:33:53.jpg" alt="courses" width="300px"> -->
-
-        </ul>
-
-    </div>
+    <div class="end">
+        <p> &#169; Made with love by Niiazbek kyzy Ademi</p>
 </body>
 <script src="script.js"> </script>
 </html>
+
+
